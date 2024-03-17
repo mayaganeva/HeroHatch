@@ -1,3 +1,234 @@
+@charset "utf-8";
+@font-face {
+	font-display: swap;
+	font-family: 'GrandHotel';
+	src: local('GrandHotel'),
+			url('fonts/GrandHotel-Regular.woff2') format('woff2'),
+			url('fonts/GrandHotel-Regular.woff') format('woff'),
+			url('fonts/GrandHotel-Regular.ttf') format('truetype');
+}
+@font-face {
+	font-display: swap;
+	font-family: 'PatrickHandSC';
+	src: local('PatrickHandSC'),
+			url('fonts/PatrickHandSC-Regular.woff2') format('woff2'),
+			url('fonts/PatrickHandSC-Regular.woff') format('woff'),
+			url('fonts/PatrickHandSC-Regular.ttf') format('truetype');
+}
+@font-face {
+	font-display: swap;
+	font-family: 'PermanentMarker';
+	src: local('PermanentMarker'),
+			url('fonts/PermanentMarker-Regular.woff2') format('woff2'),
+			url('fonts/PermanentMarker-Regular.woff') format('woff'),
+			url('fonts/PermanentMarker-Regular.ttf') format('truetype');
+}
+@font-face {
+	font-display: swap;
+	font-family: 'Praise';
+	src: local('Praise'),
+			url('fonts/Praise-Regular.woff2') format('woff2'),
+			url('fonts/Praise-Regular.woff') format('woff'),
+			url('fonts/Praise-Regular.ttf') format('truetype');
+}
+@font-face {
+	font-display: swap;
+	font-family: 'Romanesco';
+	src: local('Romanesco'),
+			url('fonts/Romanesco-Regular.woff2') format('woff2'),
+			url('fonts/Romanesco-Regular.woff') format('woff'),
+			url('fonts/Romanesco-Regular.ttf') format('truetype');
+}
+@font-face {
+	font-display: swap;
+	font-family: 'WalterTurncoat';
+	src: local('WalterTurncoat'),
+			url('fonts/WalterTurncoat-Regular.woff2') format('woff2'),
+			url('fonts/WalterTurncoat-Regular.woff') format('woff'),
+			url('fonts/WalterTurncoat-Regular.ttf') format('truetype');
+}
+@font-face {
+	font-display: swap;
+	font-family: 'OpenSans';
+	src: local('OpenSans'),
+			url('fonts/OpenSans-Variable.woff2') format('woff2'),
+			url('fonts/OpenSans-Variable.woff') format('woff'),
+			url('fonts/OpenSans-Variable.ttf') format('truetype');
+}
+:root {
+	--font-family-accent: 'WalterTurncoat', sans-serif;
+	--font-family-base:   'OpenSans', sans-serif;
+
+	--font-size-s:   	 1.4rem;
+	--font-size-m:   	 1.6rem;
+	--font-size-l:   	 2.2rem;
+	--font-size-xl:  	 3rem;
+	--font-size-xxl: 	 4.8rem;
+
+	--font-weight-m:  	 400;
+	--font-weight-l:  	 500;
+	--font-weight-xl: 	 700;
+
+	--lh-s:				 1.2;
+	--lh-m:				 1.4;
+
+	--img-max-height-s:  280px;
+	--img-max-height-m:  480px;
+	--img-max-height-l:  640px;
+
+	--space-xxs:     	 4px;
+	--space-xs:      	 8px;
+	--space-s:       	 16px;
+	--space-m:       	 24px;
+	--space-m-const: 	 24px;
+	--space-l:       	 40px;
+	--space-xl:      	 80px;
+	--space-xxl:     	 120px;
+	--space-xxxl:    	 180px;
+
+	--text-length-s:  	 540px;
+	--text-length-m:  	 680px;
+	--text-length-l:  	 760px;
+	--text-length-xl: 	 900px;
+
+	--border-radius-s:   8px;
+	--border-radius-m:   16px;
+	--border-radius-l:   24px;
+
+	--header-h:          80px;
+	--transition:        200ms ease;
+	--wgt-max-width:     1110px;
+
+	--olive: 	 #796e08;
+	--avocado:   #5E8209;
+	--moss: 	 #819D2F;
+	--apple: 	 #9BB14B;
+	--pear: 	 #E9EB9E;
+	
+	--turmeric:  #da8b2c;
+	--melon: 	 #eba148;
+	--meringue:  #FAF7F4;
+
+	--umber:	 #313023;
+	--ash:		 #4c4d39;
+	--taupe: 	 #8f8f7e;
+	--khaki: 	 #adb0a1;
+	--ivory: 	 #e3e7d6;
+	
+	--coral: 	 #ef5652;
+
+	--firetruck: #c72115;
+	--emergency: #ef5652;
+	--magnolia:  #ffd2dd;
+	--lime:		 #71c341;
+	--sunglow:   #ffc91d;
+
+	--primary-mid: 			var(--olive);
+	--primary: 				var(--avocado);
+	--primary-light: 		var(--moss);
+	--primary-lighter: 		var(--apple);
+	--primary-lightest: 	var(--pear);
+
+	--secondary-mid: 		var(--turmeric);
+	--secondary: 			var(--melon);
+	--secondary-lightest: 	var(--meringue);
+
+	--tertiary: 			var(--coral);
+
+	--neutral-darkest: 		var(--umber);
+	--neutral-dark: 		var(--ash);
+	--neutral-mid: 			var(--taupe);
+	--neutral-light: 		var(--khaki);
+	--neutral-lightest: 	var(--ivory);
+
+	--error: 				var(--firetruck);
+	--error-light: 			var(--magnolia);
+	--warning: 				var(--sunglow);
+	--success: 				var(--lime);
+}
+*,
+::before,
+::after {
+	box-sizing: border-box;
+	margin: 0;
+}
+html {
+	font-size: 62.5%;
+}
 body {
-	background-color: orange;
+	background-color: var(--neutral-lightest);
+	font-size: var(--font-size-m);
+	font-family: var(--font-family-base);
+	padding: var(--space-m);
+}
+a {
+	text-decoration: none;
+	background-color: transparent;
+}
+button {
+	background-color: var(--primary);
+	border: none;
+	border-radius: var(--space-xxs);
+	color: white;
+	font-family: var(--font-family-accent);
+	font-size: var(--font-size-l);
+	padding: var(--space-xs) var(--space-m);
+}
+button:hover {
+	background-color: var(--primary-light);
+	cursor: pointer;
+}
+img {
+	height: 100%;
+	object-fit: cover;
+	object-position: center;
+	width: 100%;
+}
+h1, h2, h3 {
+	color: var(--neutral-darkest);
+	font-family: var(--font-family-accent);
+	margin-bottom: .3em;
+}
+h1 {
+	font-size: var(--font-size-xxl);
+}
+h2 {
+	font-size: var(--font-size-xl);
+}
+h3 {
+	font-size: var(--font-size-l);
+}
+.header {
+	margin-inline: auto;
+	max-width: var(--wgt-max-width);
+}
+.container {
+	background-color: #fff;
+	border-radius: var(--space-xs);
+	padding: var(--space-s);
+	margin-inline: auto;
+	max-width: var(--wgt-max-width);
+}
+.container p {
+	margin-bottom: var(--space-s);
+}
+.container button {
+	width: 100%;
+}
+.desires {
+	display: grid;
+	gap: var(--space-m);
+}
+.desire ul {
+	margin-bottom: var(--space-s);
+}
+@media (min-width: 450px) {
+	.desires {
+		grid-template-columns: 1fr 1fr;
+	}
+}
+@media (min-width: 800px) {
+	.container button {
+		width: unset;
+	}
 }

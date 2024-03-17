@@ -28,11 +28,12 @@ const desires = [
 let unusedDesires = desires
 
 document.getElementById("highBtn").addEventListener("click", function (){
-	addRandom('high-ul');
+	addRandom("high-ul")
 })
-document.getElementById("lowBtn").addEventListener("click", addRandom('low-ul'))
+document.getElementById("lowBtn").addEventListener("click", function (){
+	addRandom("low-ul")
+})
 // read abt anonymous functions
-
 
 function addRandom(ulId) {
 	const desire = unusedDesires.splice(Math.floor(Math.random() * unusedDesires.length), 1);
@@ -40,8 +41,6 @@ function addRandom(ulId) {
 
 	li.innerHTML = desire.name
 	document.getElementById(ulId).appendChild(li)
-
-	
 
 	// write and if statement for what happens when unusedDesires is empty
 }
