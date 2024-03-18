@@ -1,1 +1,1 @@
-Super awesome character slesh-outer with a super awesome readme.md to follow
+Super awesome character flesh-outer with a super awesome readme.md to follow
