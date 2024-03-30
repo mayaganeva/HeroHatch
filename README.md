@@ -1,9 +1,10 @@
-# Vue 3 + TypeScript + Vite
+# TODO
 
-This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
-
-## Recommended Setup
-
-- [VS Code](https://code.visualstudio.com/) + [Vue - Official](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (previously Volar) and disable Vetur
-
-- Use [vue-tsc](https://github.com/vuejs/language-tools/tree/master/packages/tsc) for performing the same type checking from the command line, or for generating d.ts files for SFCs.
+-   Make buttons clickable - they should add desires to the list, first just add them randomly without any constraints
+-   Add constraints to adding desires in the container - make sure if one desire is added to a container, no other container may add it. Also handle clicking the button when there are no desires left.
+-   Add an option to remove a desire from a container - it should be returned to the list of available for adding desires
+-   Figure out how to enforce strong typing for everything with typescript
+-   Introduce Pinia, migrate desires to the store and rewrite buttons behaviour to use it
+-   ...
+-   ...
+-   Profit!

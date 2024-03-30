@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import BaseDesires from './components/BaseDesires.vue';
+import BaseDesires from './components/BaseDesires/Main.vue';
 </script>
 
 <template>
