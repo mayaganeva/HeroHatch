@@ -1,0 +1,54 @@
+{
+    "compilerOptions": {
+        "target": "esnext",
+        "module": "esnext",
+        "moduleResolution": "node",
+        "noUncheckedIndexedAccess": true,
+        // "noPropertyAccessFromIndexSignature": true,
+        "noImplicitThis": true,
+        "noImplicitReturns": true,
+        "noImplicitOverride": true,
+        "noImplicitAny": true,
+        "strictNullChecks": true,
+        "strictPropertyInitialization": true,
+        "strictFunctionTypes": true,
+        "strictBindCallApply": true,
+        "noUnusedParameters": true,
+        "noUnusedLocals": true,
+        "noFallthroughCasesInSwitch": true,
+        "alwaysStrict": true,
+        "strict": true,
+        "jsx": "preserve",
+        "sourceMap": true,
+        "resolveJsonModule": true,
+        "esModuleInterop": true,
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "allowJs": true,
+        "lib": ["esnext", "dom", "dom.iterable", "scripthost", "WebWorker"],
+        "typeRoots": ["./src/types", "./node_modules/@types", "./node_modules"],
+        "importHelpers": true,
+        "skipLibCheck": true,
+        "allowSyntheticDefaultImports": true,
+        "baseUrl": ".",
+        "paths": {
+            "@/*": ["./src/*"]
+        },
+        "types": [
+            "vue",
+            "vite/client",
+        ]
+    },
+    "include": [
+        "src/**/*.ts",
+        "src/**/*.d.ts",
+        "src/**/*.tsx",
+        "src/**/*.vue",
+        "vite.config.ts"
+    ],
+    "exclude": [
+        "node_modules",
+        "dist",
+    ],
+  "references": [{ "path": "./tsconfig.node.json" }]
+}
